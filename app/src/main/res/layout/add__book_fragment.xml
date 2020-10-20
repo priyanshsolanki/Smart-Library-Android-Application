@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+
+    android:background="@drawable/lib"
+    android:layout_height="match_parent"
+    tools:context=".Add_Book">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#00008000"
+
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_bookname"
+        android:background="#fff"
+        android:textStyle="bold"
+        android:id="@+id/edtBookName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:drawableLeft="@drawable/ic_prn"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp"
+            android:hint="Author Name"
+            android:textStyle="bold"
+            android:id="@+id/edtAuthorName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp"
+            android:hint="Quantity"
+            android:drawableLeft="@drawable/ic_qty"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:id="@+id/edtBookQty"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:padding="5dp"
+
+            android:text="Add Book"
+            android:textStyle="bold"
+            android:id="@+id/btnAddBook"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
